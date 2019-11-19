@@ -1,8 +1,11 @@
 # Vapoursynth-docker
-[![Docker Pulls](https://img.shields.io/docker/pulls/chigusa/vapoursynth-docker.svg)](https://hub.docker.com/r/chigusa/vapoursynth-docker/)
-[![Docker Build Status](https://img.shields.io/docker/build/chigusa/vapoursynth-docker.svg)](https://hub.docker.com/r/chigusa/vapoursynth-docker/)
 
-A docker image for vapoursynth and plugins
+一个包含了x265-8-10-12 bit版本的vapoursynth镜像
+
+A docker image for vapoursynth and plugins and x265_8bit & x265_10bit & x265_12bit
+
+
+
 
 ## Example
 `docker run --rm -i -t -v ~/Movies:/opt --hostname vapoursynth chigusa/vapoursynth`
