@@ -4,8 +4,8 @@ ENV WORK_PATH='/opt'
 WORKDIR ${WORK_PATH}
 VOLUME [${WORK_PATH}]
 # Common Env
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \ 
-    apk update && apk upgrade && \
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \ 
+RUN apk update && apk upgrade && \
     apk --no-cache add \
     build-base unzip gcc g++ cmake curl linux-headers bash \
     git mercurial nasm yasm libtool pkgconfig autoconf automake coreutils python3-dev  \
